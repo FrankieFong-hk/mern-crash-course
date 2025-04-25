@@ -11,8 +11,6 @@ const HomePage = () => {
     fetchProducts();
   }, []);
 
-  console.log(products);
-
   return (
     <Container maxW={"container.xl"} py={12}>
       <VStack gap={8}>
