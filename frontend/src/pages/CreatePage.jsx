@@ -28,14 +28,12 @@ const CreatePage = () => {
         title: "Error",
         description: message,
         type: "error",
-        isClosable: true,
       });
     } else {
       toaster.create({
         title: "Success",
         description: message,
         type: "success",
-        isClosable: true,
       });
 
       setNewProduct({
@@ -49,7 +47,7 @@ const CreatePage = () => {
   return (
     <Container maxW={"container.sm"}>
       <Toaster />
-      <VStack spacing={8}>
+      <VStack gap={8}>
         <Heading as={"h1"} size={"3xl"} textAlign={"center"} mb={8}>
           Create New Product
         </Heading>
@@ -61,7 +59,7 @@ const CreatePage = () => {
         rounded={"lg"}
         shadow={"md"}
       >
-        <VStack spacing={4}>
+        <VStack gap={4}>
           <Input
             placeholder="Product Name"
             name="name"

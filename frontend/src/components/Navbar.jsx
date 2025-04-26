@@ -1,10 +1,10 @@
-import { Box, Button, Container, Flex, HStack, Text } from "@chakra-ui/react";
+import { Button, Container, Flex, HStack, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 import { CiSquarePlus } from "react-icons/ci";
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
-import { useColorMode, useColorModeValue } from "./ui/color-mode";
+import { useColorMode } from "./ui/color-mode";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link to={"/"}>Product Store 🛒</Link>
         </Text>
 
-        <HStack spacing={2} alignItems={"center"}>
+        <HStack gap={2} alignItems={"center"}>
           <Link to="/create">
             <Button>
               <CiSquarePlus fontSize={"20px"} />
